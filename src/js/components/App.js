@@ -1,8 +1,6 @@
 import React from "react"
 import _ from "underscore"
 
-import CopyToClipboard from "react-copy-to-clipboard"
-
 import XMLInput from "./XMLInput"
 import Table from "./Table"
 
