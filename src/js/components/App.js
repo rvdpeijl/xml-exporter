@@ -1,6 +1,8 @@
 import React from "react"
 import _ from "underscore"
 
+import CopyToClipboard from "react-copy-to-clipboard"
+
 import XMLInput from "./XMLInput"
 import Table from "./Table"
 
@@ -84,7 +86,7 @@ class App extends React.Component {
 						<div className="row">
 							<h2>Output</h2>
 							<div className="col-xs-12">
-								<pre><code>{this.state.output}</code></pre>
+								<textarea id="code" className="form-control" rows="27" value={this.state.output}></textarea>
 							</div>
 						</div>
 					</div>
